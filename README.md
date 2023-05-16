@@ -6,11 +6,11 @@
 # Requirements
 You need a Password List
 
-Sample Wordlist: [Show](https://github.com/omarorajain/ZIP-Password-BruteForcer/blob/master/Sample%20Files/pass.txt)
+Sample Wordlist: [Show](/Sample%20Files/pass.txt)
 
 This script can only Brute Force files with a `".zip"` extension and does not work with `".rar"` extension files.
 
-Sample .Zip File: [Show](https://github.com/omarorajain/ZIP-Password-BruteForcer/blob/master/Sample%20Files/File.zip)
+Sample .Zip File: [Show](/Sample%20Files/File.zip)
 
 `Password: 123321`
 
@@ -19,12 +19,13 @@ Sample .Zip File: [Show](https://github.com/omarorajain/ZIP-Password-BruteForcer
 
 Start Screen:
 
-![ZIP-Password-BruteForcer ScreenShot](Sample%20Files\Start%20Screenshot.png?raw=true "ZIP-Password-BruteForcer")
+![ZIP-Password-BruteForcer ScreenShot](/Sample%20Files\Start%20Screenshot.png?raw=true "ZIP-Password-BruteForcer")
+
 
 
 Password Found:
 
-![Password Found ScreenShot](Sample%20Files\Password%20Found%20Screenshot.png?raw=true "Password Found ScreenShot")
+![Password Found ScreenShot](/Sample%20Files\Password%20Found%20Screenshot.png?raw=true "Password Found ScreenShot")
 
 -----------------
 # Usage:
