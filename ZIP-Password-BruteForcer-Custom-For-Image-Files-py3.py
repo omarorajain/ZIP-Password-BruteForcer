@@ -16,6 +16,7 @@ banner = """
  [1] Zip Password Cracker
  [0] Exit\n"""
 
+cls()
 print(banner)
 
 # Skip user input and set a=1 to run script
@@ -27,15 +28,20 @@ elif runScript==1:
 	# Importing Additional Modules
 	import zipfile
 	from time import time
+	from textwrap import dedent
+	from pathlib import Path
  
 	textzippass = """
 	#########################################
 	# Zip Password Brute Forcer (Top Speed) #
 	"""
-	print(textzippass, end="\n\n")
+	cls()
+	print(dedent(textzippass), end="\n\n")
 	
-	filePath = "flag.zip"
-	wordList = "rockyou.txt"
+	pythonFilePath = Path(__file__).parent
+
+	filePath = (pythonFilePath / "Sample Files\File.zip").resolve()
+	wordList = (pythonFilePath / "Sample Files\pass.txt").resolve()
 
 	# Main Function
 	def main(filePath, wordList):
@@ -55,18 +61,18 @@ elif runScript==1:
 				password = word.split("\n")[0]
 				try:
 					print("Trying: " + password)
-					zipFile.extractall(pwd=password)
+					zipFile.extractall(pwd=password.encode())
 					timeTaken = time() - currentTime 
-					with Image.open("flag.jpg") as imageFile:
-						imageFile.verify()
-						if imageFile.format == 'JPEG':
-							print('JPEG image')
-						else:
-							break
+					# with Image.open("flag.jpg") as imageFile:
+					# 	imageFile.verify()
+					# 	if imageFile.format == 'JPEG':
+					# 		print('JPEG image')
+					# 	else:
+					# 		break
 					print("\n [*] Password Found :)\n" + " [*] Password: "+password+"\n")
 					print(" [***] Took %f seconds to Crack the Password. That is, %i attempts per second." % (timeTaken,i/timeTaken))
 					quit()
-				except Exception:
+				except Exception as e:
 					pass
 			print(" [X] Sorry, Password Not Found :(")
 			quit()
