@@ -19,13 +19,13 @@ Sample .Zip File: [Show](/Sample%20Files/File.zip)
 
 Start Screen:
 
-![ZIP-Password-BruteForcer ScreenShot](/Sample%20Files\Start%20Screenshot.png?raw=true "ZIP-Password-BruteForcer")
+![ZIP-Password-BruteForcer ScreenShot](/Sample%20Files/Start%20Screenshot.png?raw=true "ZIP-Password-BruteForcer")
 
 
 
 Password Found:
 
-![Password Found ScreenShot](/Sample%20Files\Password%20Found%20Screenshot.png?raw=true "Password Found ScreenShot")
+![Password Found ScreenShot](/Sample%20Files/Password%20Found%20Screenshot.png?raw=true "Password Found ScreenShot")
 
 -----------------
 # Usage:
